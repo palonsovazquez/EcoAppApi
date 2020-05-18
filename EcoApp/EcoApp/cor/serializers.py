@@ -1,6 +1,6 @@
 from django.contrib.auth.models import User, Group
 from rest_framework import serializers
-from EcoApp.base.models import Product
+from EcoApp.cor.models import Productos
 
 class UserSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
@@ -15,5 +15,5 @@ class GroupSerializer(serializers.HyperlinkedModelSerializer):
 
 class ProductSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
-        model = Product
+        model = Productos
         fields = ['id','code','format','format','name','url', 'nick', 'avatar', 'description','status','date']
