@@ -1,8 +1,9 @@
 from django.contrib.auth.models import User, Group
 from rest_framework import viewsets
 from rest_framework import permissions
-from EcoApp.cor.serializers import UserSerializer, GroupSerializer ,ProductSerializer
+from EcoApp.cor.serializers import UserSerializer, GroupSerializer, ProductSerializer
 from EcoApp.cor.models import Productos
+from django_filters.rest_framework import DjangoFilterBackend
 
 
 class UserViewSet(viewsets.ModelViewSet):
@@ -22,6 +23,7 @@ class GroupViewSet(viewsets.ModelViewSet):
     serializer_class = GroupSerializer
     permission_classes = [permissions.IsAuthenticated]
 
+
 class ProductViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows Product to be viewed or edited.
@@ -29,3 +31,5 @@ class ProductViewSet(viewsets.ModelViewSet):
     queryset = Productos.objects.all()
     serializer_class = ProductSerializer
     permission_classes = [permissions.IsAuthenticated]
+    filter_backends = [DjangoFilterBackend]
+    filterset_fields = ['code']
