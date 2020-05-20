@@ -4,6 +4,8 @@ from django.db import models
 from django.db import models
 from django.utils import timezone
 
+
+
 #model of component
 """
 class Component(models.Model):
