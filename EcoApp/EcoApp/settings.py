@@ -25,7 +25,8 @@ SECRET_KEY = ')=^-n)y*m%@issq2rlwyiy4g$k^xaxw4de3bcw&5sc97n(qt60'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['0.0.0.0','192.168.0.30','127.0.0.1','localhost']
+
 
 
 # Application definition
@@ -39,7 +40,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django_filters',
     'rest_framework',
-    'drf_firebase_auth',
     'EcoApp.cor',
 
 ]
@@ -125,27 +125,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 REST_FRAMEWORK = {
-    'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend'],
-    'DEFAULT_AUTHENTICATION_CLASSES': [
-    'rest_framework.authentication.SessionAuthentication',
-    'drf_firebase_auth.authentication.FirebaseAuthentication',
-    ]
+    'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend']
 }
-
-DRF_FIREBASE_AUTH = {
-    # path to JSON file with firebase secrets
-    'FIREBASE_SERVICE_ACCOUNT_KEY': 'ecoapp-secret.json',
-    # allow creation of new local user in db
-    'FIREBASE_CREATE_LOCAL_USER': True,
-    # attempt to split firebase user.display_name and set local user
-    # first_name and last_name
-    'FIREBASE_ATTEMPT_CREATE_WITH_DISPLAY_NAME': True,
-    # commonly JWT or Bearer (e.g. JWT <token>)
-    'FIREBASE_AUTH_HEADER_PREFIX': 'JWT',
-    # verify that JWT has not been revoked
-    'FIREBASE_CHECK_JWT_REVOKED': True,
-    # require that firebase user.email_verified is True
-    'FIREBASE_AUTH_EMAIL_VERIFICATION': False
-}
-
-
