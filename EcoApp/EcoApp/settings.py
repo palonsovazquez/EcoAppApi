@@ -25,7 +25,7 @@ SECRET_KEY = ')=^-n)y*m%@issq2rlwyiy4g$k^xaxw4de3bcw&5sc97n(qt60'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['192.168.0.30','127.0.0.1','172.17.41.161','0.0.0.0']
 
 
 # Application definition
@@ -127,6 +127,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 REST_FRAMEWORK = {
     'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend'],
     'DEFAULT_AUTHENTICATION_CLASSES': [
+    'rest_framework.authentication.BasicAuthentication',
     'rest_framework.authentication.SessionAuthentication',
     'drf_firebase_auth.authentication.FirebaseAuthentication',
     ]
