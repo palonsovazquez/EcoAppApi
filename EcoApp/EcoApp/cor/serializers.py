@@ -1,6 +1,7 @@
 from django.contrib.auth.models import User, Group
 from rest_framework import serializers
 from EcoApp.cor.models import Productos
+from drf_base64.serializers import ModelSerializer
 
 class UserSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
