@@ -3,6 +3,6 @@
 __pycache__
 venv3.8
 venv3.80
-db.sqlite3
+EcoApp/db.sqlite3
 /static
 .DS_Store
