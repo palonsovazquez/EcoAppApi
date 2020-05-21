@@ -5,8 +5,10 @@
       <sourceFolder url="file://$MODULE_DIR$/EcoApp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/EcoApp/EcoApp/cor" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
+      <excludeFolder url="file://$MODULE_DIR$/venv3.8" />
+      <excludeFolder url="file://$MODULE_DIR$/venv3.80" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="Python 3.8 (EcoAppAPI)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
