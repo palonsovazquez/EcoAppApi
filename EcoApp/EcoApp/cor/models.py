@@ -32,7 +32,7 @@ class Component(models.Model):
 # model of product
 class Productos(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-    code = models.CharField(max_length=200)
+    code = models.CharField(unique=True, max_length=200)
     format = models.CharField(max_length=50)
     name = models.CharField(max_length=200)
     url =models.ImageField(upload_to="Products/Images", height_field=None, width_field=None, max_length=100,)
