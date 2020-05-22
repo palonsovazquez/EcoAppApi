@@ -35,6 +35,8 @@ class ComponentViewSet(viewsets.ModelViewSet):
     filterset_fields = ['code']
 
 
+
+
 class ProductViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows Product to be viewed or edited.
@@ -44,3 +46,4 @@ class ProductViewSet(viewsets.ModelViewSet):
     permission_classes = [permissions.IsAuthenticated]
     filter_backends = [DjangoFilterBackend]
     filterset_fields = ['code']
+
