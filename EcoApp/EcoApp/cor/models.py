@@ -3,15 +3,17 @@ import uuid
 from django.db import models
 from django.db import models
 from django.utils import timezone
-from drf_firebase_auth.models import FirebaseUser
+from drf_firebase_auth.models import FirebaseUserProvider
 
 
 
 
 
 #model of Component
-
-
+# class FBUser(FirebaseUser):
+#     def __str__(self):
+#         return self.user.name
+#
 
 
 class Component(models.Model):
@@ -27,7 +29,7 @@ class Component(models.Model):
         Aceite = 9
         Ropa = 10
 
-    code = models.IntegerField(primary_key=True)
+    code = models.IntegerField(primary_key=True,unique=True,editable=False)
     name = models.CharField(max_length=200)
     recicleType = models.IntegerField(choices = Suit.choices, null = True)
     # a cambiar  recicleType = models.IntegerChoices('recicleType','Envases Vidrio Papel Organico Medicamentos Restos Punto_Limpio Pilas Aceite Ropa')
@@ -51,7 +53,7 @@ class Productos(models.Model):
     components = models.ManyToManyField(Component)
     image = models.ImageField(upload_to="Products/Images", height_field=None, width_field=None, max_length=100,)
 #    uid = models.id = models.UUIDField(primary_key=False, default=uuid.uuid4, editable=True)
-    fbuser = models.ForeignKey(FirebaseUser,on_delete=models.DO_NOTHING , null=True)
+    fbuser = models.ForeignKey(FirebaseUserProvider,on_delete=models.DO_NOTHING , null=True)
     #nick = models.CharField(max_length=200)
     #avatar = models.ImageField(upload_to="Users/Avatars", height_field=None, width_field=None, max_length=100,)
     description = models.TextField(null=True, default="")

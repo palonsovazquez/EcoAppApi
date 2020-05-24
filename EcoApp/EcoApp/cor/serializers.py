@@ -1,7 +1,7 @@
 from django.contrib.auth.models import User, Group
 from rest_framework import serializers
 from EcoApp.cor.models import Productos, Component
-from drf_firebase_auth.models import FirebaseUser
+from drf_firebase_auth.models import FirebaseUserProvider, FirebaseUser
 
 
 
@@ -12,11 +12,13 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
         model = User
         fields = ['url', 'username','first_name','last_name', 'email', 'groups']
 
-class FirebaseUserSerializer(serializers.HyperlinkedModelSerializer):
-    user = UserSerializer(many=False, read_only=True)
+class FirebaseUserSerializer(serializers.ModelSerializer):
+    #firebase_user = UserSerializer(many=False, read_only=True)
     class Meta:
-        model = FirebaseUser
-        fields = ['uid', 'user']
+        model = FirebaseUserProvider
+        fields = ['uid', 'provider_id','firebase_user']
+
+
 
 
 class GroupSerializer(serializers.HyperlinkedModelSerializer):
