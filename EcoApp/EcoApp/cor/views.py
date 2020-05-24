@@ -39,7 +39,7 @@ class ComponentViewSet(viewsets.ModelViewSet):
     """
     queryset = Component.objects.all()
     serializer_class = ComponentSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
     filter_backends = [DjangoFilterBackend]
     filterset_fields = ['code']
 
@@ -53,7 +53,7 @@ class ProductViewSet(viewsets.ModelViewSet):
     """
     queryset = Productos.objects.all()
     serializer_class = ProductSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
     filter_backends = [DjangoFilterBackend]
     filterset_fields = ['code','fbuser']
 
