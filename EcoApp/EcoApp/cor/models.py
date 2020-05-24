@@ -50,11 +50,11 @@ class Productos(models.Model):
     name = models.CharField(max_length=200)
     components = models.ManyToManyField(Component)
     image = models.ImageField(upload_to="Products/Images", height_field=None, width_field=None, max_length=100,)
-    uid = models.id = models.UUIDField(primary_key=False, default=uuid.uuid4, editable=True)
+#    uid = models.id = models.UUIDField(primary_key=False, default=uuid.uuid4, editable=True)
     fbuser = models.ForeignKey(FirebaseUser,on_delete=models.DO_NOTHING , null=True)
     #nick = models.CharField(max_length=200)
     #avatar = models.ImageField(upload_to="Users/Avatars", height_field=None, width_field=None, max_length=100,)
-    description = models.TextField()
+    description = models.TextField(null=True, default="")
     status = models.IntegerField(default=1)
     date = models.DateTimeField(default=timezone.now)
 

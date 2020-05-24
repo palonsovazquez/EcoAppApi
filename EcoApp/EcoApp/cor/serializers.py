@@ -55,7 +55,7 @@ class ProductSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Productos
 
-        fields = ['id','code','format','name','image','fbuser','nick', 'avatar','components', 'description','status','date']
+        fields = ['id','code','format','name','image','fbuser','components', 'description','status','date']
 
         # def create(self, validated_data):
         #     """
