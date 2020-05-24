@@ -46,6 +46,7 @@ class ComponentViewSet(viewsets.ModelViewSet):
 
 
 
+
 class ProductViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows Product to be viewed or edited.
@@ -54,5 +55,6 @@ class ProductViewSet(viewsets.ModelViewSet):
     serializer_class = ProductSerializer
     permission_classes = [permissions.IsAuthenticated]
     filter_backends = [DjangoFilterBackend]
-    filterset_fields = ['code']
+    filterset_fields = ['code','fbuser']
+
 
