@@ -9,3 +9,4 @@ venv3.80
 /EcoApp/Products/
 /EcoApp/Users/
 /EcoApp/media/
+/EcoApp/ecoapp-secret.json

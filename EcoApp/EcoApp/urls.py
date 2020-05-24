@@ -22,6 +22,7 @@ from EcoApp import settings
 from EcoApp.cor import views
 
 router = routers.DefaultRouter()
+router.register(r'firebaseuser', views.FirebaseUserViewSet)
 router.register(r'users', views.UserViewSet)
 router.register(r'groups', views.GroupViewSet)
 router.register(r'products', views.ProductViewSet)

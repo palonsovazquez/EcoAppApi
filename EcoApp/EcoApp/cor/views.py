@@ -1,10 +1,19 @@
 from django.contrib.auth.models import User, Group
+from drf_firebase_auth.models import FirebaseUser
 from rest_framework import viewsets
 from rest_framework import permissions
-from EcoApp.cor.serializers import UserSerializer, GroupSerializer, ProductSerializer, ComponentSerializer
+from EcoApp.cor.serializers import UserSerializer, GroupSerializer, ProductSerializer, ComponentSerializer, \
+    FirebaseUserSerializer
 from EcoApp.cor.models import Productos, Component
 from django_filters.rest_framework import DjangoFilterBackend
 
+class FirebaseUserViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows users to be viewed or edited.
+    """
+    queryset = FirebaseUser.objects.all().order_by('uid')
+    serializer_class = FirebaseUserSerializer
+    permission_classes = [permissions.IsAuthenticated]
 
 class UserViewSet(viewsets.ModelViewSet):
     """
