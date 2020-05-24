@@ -8,15 +8,15 @@ from drf_firebase_auth.models import FirebaseUserProvider, FirebaseUser
 
 class UserSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
-
         model = User
-        fields = ['url', 'username','first_name','last_name', 'email', 'groups']
+        fields = ['url','username','first_name','last_name', 'email', 'groups']
 
 class FirebaseUserSerializer(serializers.ModelSerializer):
-    #firebase_user = UserSerializer(many=False, read_only=True)
+    user = UserSerializer(many=False, read_only=True)
+
     class Meta:
-        model = FirebaseUserProvider
-        fields = ['uid', 'provider_id','firebase_user']
+        model = FirebaseUser
+        fields = ['id','uid', 'user']
 
 
 
@@ -52,8 +52,9 @@ class ComponentSerializer(serializers.HyperlinkedModelSerializer):
 
 
 class ProductSerializer(serializers.HyperlinkedModelSerializer):
-    components = ComponentSerializer(many=True, read_only=True)
-    fbuser = FirebaseUserSerializer(many=False, read_only=True)
+    #components = ComponentSerializer(many=True, read_only=False)
+    #fbuser = FirebaseUserSerializer(many=False, read_only=True)
+    #fbuser = FirebaseUser.uid
     class Meta:
         model = Productos
 

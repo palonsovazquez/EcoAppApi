@@ -3,10 +3,7 @@ import uuid
 from django.db import models
 from django.db import models
 from django.utils import timezone
-from drf_firebase_auth.models import FirebaseUserProvider
-
-
-
+from drf_firebase_auth.models import FirebaseUserProvider, FirebaseUser
 
 
 #model of Component
@@ -53,7 +50,7 @@ class Productos(models.Model):
     components = models.ManyToManyField(Component)
     image = models.ImageField(upload_to="Products/Images", height_field=None, width_field=None, max_length=100,)
 #    uid = models.id = models.UUIDField(primary_key=False, default=uuid.uuid4, editable=True)
-    fbuser = models.ForeignKey(FirebaseUserProvider,on_delete=models.DO_NOTHING , null=True)
+    fbuser = models.ForeignKey(FirebaseUser,on_delete=models.DO_NOTHING , null=True ,default='1')
     #nick = models.CharField(max_length=200)
     #avatar = models.ImageField(upload_to="Users/Avatars", height_field=None, width_field=None, max_length=100,)
     description = models.TextField(null=True, default="")
