@@ -6,6 +6,6 @@ venv3.80
 /EcoApp/db.sqlite3
 /static
 .DS_Store
-/EcoApp/Products/
-/EcoApp/Users/
 /EcoApp/media/
+/EcoApp/secrets.json
+/EcoApp/ecoapp-secret.json
