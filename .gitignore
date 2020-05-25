@@ -1,0 +1,12 @@
+*.pyc
+*~
+__pycache__
+myvenv
+db.sqlite3
+/static
+.DS_Store
+/venv/
+/venv3.80/
+/EcoApp/secrets.json
+EcoApp/ecoapp-secret.json
+/media/
