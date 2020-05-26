@@ -13,8 +13,8 @@ from drf_firebase_auth.models import FirebaseUserProvider, FirebaseUser
 #
 
 
-class Component(models.Model):
-    class Suit(models.IntegerChoices):
+class Components(models.Model):
+    class recycleTypes(models.IntegerChoices):
         Envases = 1
         Vidrio = 2
         Papel = 3
@@ -28,7 +28,7 @@ class Component(models.Model):
 
     code = models.IntegerField(primary_key=True,unique=True,editable=False)
     name = models.CharField(max_length=200)
-    recicleType = models.IntegerField(choices = Suit.choices, null = True)
+    recycleType = models.IntegerField(choices = recycleTypes.choices, null = True)
     # a cambiar  recicleType = models.IntegerChoices('recicleType','Envases Vidrio Papel Organico Medicamentos Restos Punto_Limpio Pilas Aceite Ropa')
     #recicleType = models.IntegerField(null= True)
     image = models.ImageField(upload_to="Components/Images", height_field=None, width_field=None, max_length=100, )
@@ -47,7 +47,7 @@ class Productos(models.Model):
     code = models.CharField(unique=True, max_length=200)
     format = models.CharField(max_length=50)
     name = models.CharField(max_length=200)
-    components = models.ManyToManyField(Component)
+    components = models.ManyToManyField(Components)
     image = models.ImageField(upload_to="Products/Images", height_field=None, width_field=None, max_length=100,)
 #    uid = models.id = models.UUIDField(primary_key=False, default=uuid.uuid4, editable=True)
     fbuser = models.ForeignKey(FirebaseUser,on_delete=models.DO_NOTHING , null=True ,default='1')

@@ -2,9 +2,9 @@ from django.contrib.auth.models import User, Group
 from drf_firebase_auth.models import FirebaseUserProvider, FirebaseUser
 from rest_framework import viewsets
 from rest_framework import permissions
-from EcoApp.cor.serializers import UserSerializer, GroupSerializer, ProductSerializer, ComponentSerializer, \
+from EcoApp.cor.serializers import UserSerializer, GroupSerializer, ProductsSerializer, ComponentsSerializer, \
     FirebaseUserSerializer
-from EcoApp.cor.models import Productos, Component
+from EcoApp.cor.models import Productos, Components
 from django_filters.rest_framework import DjangoFilterBackend
 
 class FirebaseUserViewSet(viewsets.ModelViewSet):
@@ -37,8 +37,8 @@ class ComponentViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows Product to be viewed or edited.
     """
-    queryset = Component.objects.all()
-    serializer_class = ComponentSerializer
+    queryset = Components.objects.all()
+    serializer_class = ComponentsSerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
     filter_backends = [DjangoFilterBackend]
     filterset_fields = ['code']
@@ -52,7 +52,7 @@ class ProductViewSet(viewsets.ModelViewSet):
     API endpoint that allows Product to be viewed or edited.
     """
     queryset = Productos.objects.all()
-    serializer_class = ProductSerializer
+    serializer_class = ProductsSerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
     filter_backends = [DjangoFilterBackend]
     filterset_fields = ['code','fbuser']
