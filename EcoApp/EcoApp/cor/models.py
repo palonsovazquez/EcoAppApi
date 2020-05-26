@@ -7,10 +7,7 @@ from drf_firebase_auth.models import FirebaseUserProvider, FirebaseUser
 
 
 #model of Component
-# class FBUser(FirebaseUser):
-#     def __str__(self):
-#         return self.user.name
-#
+
 
 
 class Components(models.Model):
@@ -26,17 +23,23 @@ class Components(models.Model):
         Aceite = 9
         Ropa = 10
 
-    code = models.IntegerField(primary_key=True,unique=True,editable=False)
+    code = models.IntegerField(primary_key=True, editable=False,null=False  )
     name = models.CharField(max_length=200)
     recycleType = models.IntegerField(choices = recycleTypes.choices, null = True)
     # a cambiar  recicleType = models.IntegerChoices('recicleType','Envases Vidrio Papel Organico Medicamentos Restos Punto_Limpio Pilas Aceite Ropa')
     #recicleType = models.IntegerField(null= True)
     image = models.ImageField(upload_to="Components/Images", height_field=None, width_field=None, max_length=100, )
 
+
+
+
     def __str__(self):
         return self.name
 
+# Initial Components
 
+componente1 = Components(code = 10,name = "tapa de botella de plastico",recycleType = 1, image = "tapa_botella_plastico.jpeg")
+componente1.save()
 # model of product
 
 
