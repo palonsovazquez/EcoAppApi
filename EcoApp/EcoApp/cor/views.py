@@ -7,7 +7,7 @@ from EcoApp.cor.serializers import UserSerializer, GroupSerializer, ProductsSeri
 from EcoApp.cor.models import Productos, Components
 from django_filters.rest_framework import DjangoFilterBackend
 
-class FirebaseUserViewSet(viewsets.ModelViewSet):
+class FirebaseUsersViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows users to be viewed or edited.
     """
@@ -33,7 +33,7 @@ class GroupViewSet(viewsets.ModelViewSet):
     permission_classes = [permissions.IsAuthenticated]
 
 
-class ComponentViewSet(viewsets.ModelViewSet):
+class ComponentsViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows Product to be viewed or edited.
     """

@@ -22,11 +22,11 @@ from EcoApp import settings
 from EcoApp.cor import views
 
 router = routers.DefaultRouter()
-router.register(r'firebaseuser', views.FirebaseUserViewSet)
+router.register(r'firebaseusers', views.FirebaseUsersViewSet)
 router.register(r'users', views.UserViewSet)
 router.register(r'groups', views.GroupViewSet)
 router.register(r'products', views.ProductViewSet)
-router.register(r'component', views.ComponentViewSet)
+router.register(r'components', views.ComponentsViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
