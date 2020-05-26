@@ -1,6 +1,6 @@
 from django.contrib.auth.models import User, Group
 from rest_framework import serializers
-from EcoApp.cor.models import Productos, Components
+from EcoApp.cor.models import Products, Components
 from drf_firebase_auth.models import FirebaseUserProvider, FirebaseUser
 
 
@@ -56,7 +56,7 @@ class ProductsSerializer(serializers.HyperlinkedModelSerializer):
     #fbuser = FirebaseUserSerializer(many=False, read_only=True)
     #fbuser = FirebaseUser.uid
     class Meta:
-        model = Productos
+        model = Products
 
         fields = ['id','code','format','name','image','fbuser','components', 'description','status','date']
 
@@ -64,7 +64,7 @@ class ProductsSerializer(serializers.HyperlinkedModelSerializer):
         #     """
         #     Create and return a new `Serie` instance, given the validated data.
         #     """
-        #     return Productos.objects.create(**validated_data)
+        #     return Products.objects.create(**validated_data)
         #
         # def update(self, instance, validated_data):
         #     """

@@ -38,14 +38,14 @@ class Components(models.Model):
 
 # Initial Components
 
-componente1 = Components(code = 10,name = "tapa de botella de plastico",recycleType = 1, image = "tapa_botella_plastico.jpeg")
-componente1.save()
+#componente1 = Components(code = 10,name = "tapa de botella de plastico",recycleType = 1, image = "tapa_botella_plastico.jpeg")
+#componente1.save()
 # model of product
 
 
 
 
-class Productos(models.Model):
+class Products(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     code = models.CharField(unique=True, max_length=200)
     format = models.CharField(max_length=50)
