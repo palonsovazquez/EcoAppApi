@@ -30,7 +30,7 @@ class GroupSerializer(serializers.HyperlinkedModelSerializer):
 class ComponentSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Component
-        fields = ['code','name', 'recicleType','image' ]
+        fields = ['code','name', 'recycleType','image' ]
 
         # def create(self, validated_data):
         #     """
@@ -88,7 +88,7 @@ class ProductSerializer(serializers.HyperlinkedModelSerializer):
 class ComponentSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Component
-        fields = ['code','name', 'recicleType','image' ]
+        fields = ['code','name', 'recycleType','image' ]
 
         # def create(self, validated_data):
         #     """

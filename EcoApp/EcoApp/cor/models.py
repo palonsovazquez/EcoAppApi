@@ -28,7 +28,7 @@ class Component(models.Model):
 
     code = models.IntegerField(primary_key=True,unique=True,editable=False)
     name = models.CharField(max_length=200)
-    recicleType = models.IntegerField(choices = Suit.choices, null = True)
+    recycleType = models.IntegerField(choices = Suit.choices, null = True)
     # a cambiar  recicleType = models.IntegerChoices('recicleType','Envases Vidrio Papel Organico Medicamentos Restos Punto_Limpio Pilas Aceite Ropa')
     #recicleType = models.IntegerField(null= True)
     image = models.ImageField(upload_to="Components/Images", height_field=None, width_field=None, max_length=100, )
