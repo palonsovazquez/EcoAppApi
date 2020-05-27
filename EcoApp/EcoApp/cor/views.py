@@ -14,7 +14,7 @@ class FirebaseUserViewSet(viewsets.ModelViewSet):
     queryset = FirebaseUser.objects.all().order_by('uid')
     serializer_class = FirebaseUserSerializer
     permission_classes = [permissions.IsAuthenticated]
-
+    filterset_fields = ['uid']
 class UserViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows users to be viewed or edited.
@@ -51,7 +51,7 @@ class ProductViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows Product to be viewed or edited.
     """
-    queryset = Productos.objects.all()
+    queryset = Productos.objects.all().order_by('date')
     serializer_class = ProductSerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
     filter_backends = [DjangoFilterBackend]
