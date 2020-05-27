@@ -1,6 +1,7 @@
 *.pyc
 *~
 __pycache__
+venv
 venv3.8
 venv3.80
 /EcoApp/db.sqlite3
@@ -11,3 +12,4 @@ venv3.80
 /EcoApp/media/
 /EcoApp/ecoapp-secret.json
 /EcoApp/secrets.json
+/EcoApp/EcoApp/cor/migrations/
