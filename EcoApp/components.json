@@ -1,0 +1,134 @@
+{"components" : [
+    {
+        "code": 2,
+        "name": "Bolsa de plástico",
+        "recycleType": 1,
+        "image": "http://192.168.0.31:8000/media/Bolsa_de_pl%C3%A1stico.png"
+    },
+    {
+        "code": 3,
+        "name": "Caja de cartón Limpia",
+        "recycleType": 3,
+        "image": "http://192.168.0.31:8000/media/Caja_de_cart%C3%B3n_Limpia.png"
+    },
+    {
+        "code": 4,
+        "name": "Caja de cartón Pizza",
+        "recycleType": 4,
+        "image": "http://192.168.0.31:8000/media/Caja_de_cart%C3%B3n_Pizza.png"
+    },
+    {
+        "code": 5,
+        "name": "Caja de plástico",
+        "recycleType": 1,
+        "image": "http://192.168.0.31:8000/media/Caja_de_pl%C3%A1stico.png"
+    },
+    {
+        "code": 6,
+        "name": "Carcasa de plástico",
+        "recycleType": 7,
+        "image": "http://192.168.0.31:8000/media/Carcasa_de_pl%C3%A1stico.png"
+    },
+    {
+        "code": 7,
+        "name": "Chapa metalica Botella Vidrio",
+        "recycleType": 1,
+        "image": "http://192.168.0.31:8000/media/Chapa_metalica_Botella_Vidrio.png"
+    },
+    {
+        "code": 8,
+        "name": "Corcho",
+        "recycleType": 4,
+        "image": "http://192.168.0.31:8000/media/Corcho.png"
+    },
+    {
+        "code": 9,
+        "name": "Corcho",
+        "recycleType": 6,
+        "image": "http://192.168.0.31:8000/media/Corcho.png"
+    },
+    {
+        "code": 10,
+        "name": "Envoltorio de papel Limpio",
+        "recycleType": 3,
+        "image": "http://192.168.0.31:8000/media/Envoltorio_de_papel_Limpio.png"
+    },
+    {
+        "code": 11,
+        "name": "Envoltorio de papel Sucio",
+        "recycleType": 4,
+        "image": "http://192.168.0.31:8000/media/Envoltorio_de_papel_Sucio.png"
+    },
+    {
+        "code": 12,
+        "name": "Envoltorio de plástico",
+        "recycleType": 1,
+        "image": "http://192.168.0.31:8000/media/Envoltorio_de_pl%C3%A1stico.png"
+    },
+    {
+        "code": 13,
+        "name": "Lata de aluminio",
+        "recycleType": 1,
+        "image": "http://192.168.0.31:8000/media/Lata_de_aluminio.png"
+    },
+    {
+        "code": 14,
+        "name": "Madera de obra",
+        "recycleType": 7,
+        "image": "http://192.168.0.31:8000/media/Madera_de_obra.png"
+    },
+    {
+        "code": 15,
+        "name": "Papel",
+        "recycleType": 3,
+        "image": "http://192.168.0.31:8000/media/Papel.png"
+    },
+    {
+        "code": 16,
+        "name": "Papel",
+        "recycleType": 3,
+        "image": "http://192.168.0.31:8000/media/Papel.png"
+    },
+    {
+        "code": 17,
+        "name": "Pilas",
+        "recycleType": 8,
+        "image": "http://192.168.0.31:8000/media/Pilas.png"
+    },
+    {
+        "code": 18,
+        "name": "Restos de poda",
+        "recycleType": 4,
+        "image": "http://192.168.0.31:8000/media/Restos_de_poda.png"
+    },
+    {
+        "code": 19,
+        "name": "Revista",
+        "recycleType": 3,
+        "image": "http://192.168.0.31:8000/media/Revista.png"
+    },
+    {
+        "code": 20,
+        "name": "Tapa de metal",
+        "recycleType": 1,
+        "image": "http://192.168.0.31:8000/media/Tapa_de_metal.png"
+    },
+    {
+        "code": 21,
+        "name": "Tapa de plástico",
+        "recycleType": 1,
+        "image": "http://192.168.0.31:8000/media/Tapa_de_pl%C3%A1stico.png"
+    },
+    {
+        "code": 22,
+        "name": "Tapa plastica Botella Vidrio",
+        "recycleType": 1,
+        "image": "http://192.168.0.31:8000/media/Tapa_plastica_Botella_Vidrio.png"
+    },
+    {
+        "code": 23,
+        "name": "Toalla Papel",
+        "recycleType": 6,
+        "image": "http://192.168.0.31:8000/media/Toalla_Papel.png"
+    }
+]}

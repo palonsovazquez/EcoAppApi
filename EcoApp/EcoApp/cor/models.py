@@ -1,17 +1,13 @@
 import uuid
+import json
 
-from django.db import models
 from django.db import models
 from django.utils import timezone
-from drf_firebase_auth.models import  FirebaseUser
 
 
+# model of Component
+# Class to store prototype of a component common to some of the products.
 
-#model of Component
-# class FBUser(FirebaseUser):
-#     def __str__(self):
-#         return self.user.name
-#
 
 
 class Component(models.Model):
@@ -37,9 +33,29 @@ class Component(models.Model):
     def __str__(self):
         return self.name
 
+# script to load components from json
+
+try:
+    with open("components.json", "r") as read_file:
+
+        data = json.load(read_file)
+        if 'components' in data:
+            print('test1')
+            for component in data['components']:
+                print('test2')
+                componentdb = Component(code=component['code'], name=component['name'],
+                                        recycleType=component['recycleType'], image=component['image'])
+                componentdb.save()
+                print(componentdb)
+except:
+    print("components.json not present in path")
+
+
+
+
 
 # model of product
-
+# Class to store the data about a object with a code to identify it.
 
 
 
@@ -61,5 +77,19 @@ class Productos(models.Model):
     def __str__(self):
         return self.name
 
-
-
+# with open("productos.json", "r") as read_file:
+#     data = json.load(read_file)
+#     if 'productos' in data:
+#         print('test12')
+#         for productos in data['productos']:
+#             print('test22')
+#             componentssaved = []
+#             for compon in productos['components']:
+#                 print('compon' + compon)
+#                 componentssaved.append(compon)
+#             produc = Productos(id=productos['id'], code=productos['code'], format=productos['format'],
+#                                 image=productos['image'], fbuser=productos['fbuser'],
+#                                description=productos['description'], status=productos['status'], date=productos['date'])
+#             produc.components.set(compon)
+#             produc.save()
+#             print(produc)

@@ -1,0 +1,202 @@
+{"productos" : 
+[
+    {
+        "id": "63f6d695-2e62-44d6-98aa-3672b7030dcc",
+        "code": "8411024330307",
+        "format": "EAN_13",
+        "name": "Larsa Leche Entera 1L",
+        "image": "http://192.168.0.31:8000/media/Products/Images/llorando112.png",
+        "fbuser": null,
+        "components": [
+            "http://192.168.0.31:8000/components/4/"
+        ],
+        "description": "asdfasdf",
+        "status": 1,
+        "date": "2020-05-27T18:48:21.809674Z"
+    },
+    {
+        "id": "8785cdff-a9dc-4f5f-b1d1-f93a1235f2ae",
+        "code": "sdfasdfa",
+        "format": "EAN_13",
+        "name": "Larsa Leche Entera 1L",
+        "image": "http://192.168.0.31:8000/media/Products/Images/llorando112_MiAiZp9.png",
+        "fbuser": "http://192.168.0.31:8000/users/1/",
+        "components": [
+            "http://192.168.0.31:8000/components/2/",
+            "http://192.168.0.31:8000/components/3/",
+            "http://192.168.0.31:8000/components/4/"
+        ],
+        "description": "fasdf",
+        "status": 1,
+        "date": "2020-05-27T19:48:42.198980Z"
+    },
+    {
+        "id": "236ccebd-825b-4fc5-9396-0a1c32c0e12b",
+        "code": "saddfasd",
+        "format": "12123",
+        "name": "Larsa Leche Entera 1L",
+        "image": "http://192.168.0.31:8000/media/Products/Images/llorando112_Gae2DtH.png",
+        "fbuser": "http://192.168.0.31:8000/users/1/",
+        "components": [
+            "http://192.168.0.31:8000/components/2/",
+            "http://192.168.0.31:8000/components/6/",
+            "http://192.168.0.31:8000/components/8/"
+        ],
+        "description": "adsfadsfsda",
+        "status": 1,
+        "date": "2020-05-27T19:49:24.777748Z"
+    },
+    {
+        "id": "63dba1fe-0e2f-4a7d-b1e4-8785560bac18",
+        "code": "84110243303088",
+        "format": "EAN_13",
+        "name": "asdgdfgga",
+        "image": "http://192.168.0.31:8000/media/Products/Images/llorando112_4BIOyr5.png",
+        "fbuser": "http://192.168.0.31:8000/users/1/",
+        "components": [
+            "http://192.168.0.31:8000/components/3/",
+            "http://192.168.0.31:8000/components/4/"
+        ],
+        "description": "asdffdaczxcas",
+        "status": 1,
+        "date": "2020-05-27T20:10:36.122311Z"
+    },
+    {
+        "id": "95c027f5-cd04-48a4-827f-0b5260752e11",
+        "code": "841102433000",
+        "format": "EAN_13",
+        "name": "hola2",
+        "image": "http://192.168.0.31:8000/media/Products/Images/llorando112_BiXHFQW.png",
+        "fbuser": "http://192.168.0.31:8000/users/1/",
+        "components": [
+            "http://192.168.0.31:8000/components/4/",
+            "http://192.168.0.31:8000/components/7/",
+            "http://192.168.0.31:8000/components/9/"
+        ],
+        "description": "afdsasdf",
+        "status": 1,
+        "date": "2020-05-27T20:39:50.105576Z"
+    },
+    {
+        "id": "12e6edc6-df4f-4fc7-ba68-edaf83d5a826",
+        "code": "asdggqer",
+        "format": "EAN_13",
+        "name": "adfsf",
+        "image": "http://192.168.0.31:8000/media/Products/Images/llorando112_zztuGGx.png",
+        "fbuser": "http://192.168.0.31:8000/users/1/",
+        "components": [
+            "http://192.168.0.31:8000/components/4/",
+            "http://192.168.0.31:8000/components/9/"
+        ],
+        "description": "asdfaf<asd",
+        "status": 1,
+        "date": "2020-05-27T20:41:15.660452Z"
+    },
+    {
+        "id": "60351409-ec54-43ab-b8e3-02711c7bab17",
+        "code": "841102433030712311",
+        "format": "EAN_13",
+        "name": "Larsa Leche Entera 1L",
+        "image": "http://192.168.0.31:8000/media/Products/Images/llorando112_8RufhIm.png",
+        "fbuser": "http://192.168.0.31:8000/users/1/",
+        "components": [
+            "http://192.168.0.31:8000/components/11/",
+            "http://192.168.0.31:8000/components/13/",
+            "http://192.168.0.31:8000/components/15/"
+        ],
+        "description": "afsdadf",
+        "status": 1,
+        "date": "2020-05-27T21:02:09.673082Z"
+    },
+    {
+        "id": "676da5a6-2822-4b2a-9261-af050c60a410",
+        "code": "8411024330307123123",
+        "format": "EAN_13",
+        "name": "hola2",
+        "image": "http://192.168.0.31:8000/media/Products/Images/llorando112_orWyRgR.png",
+        "fbuser": "http://192.168.0.31:8000/users/1/",
+        "components": [
+            "http://192.168.0.31:8000/components/5/"
+        ],
+        "description": "dffagfddsf",
+        "status": 1,
+        "date": "2020-05-27T21:02:57.454875Z"
+    },
+    {
+        "id": "d586cc5c-7586-44bb-889c-56c4ce26dc1e",
+        "code": "84110243303072123123",
+        "format": "EAN_13",
+        "name": "gdsfdvfddfasdfasdfasdf",
+        "image": "http://192.168.0.31:8000/media/Products/Images/llorando112_CDWl2P2.png",
+        "fbuser": "http://192.168.0.31:8000/users/1/",
+        "components": [
+            "http://192.168.0.31:8000/components/5/",
+            "http://192.168.0.31:8000/components/9/"
+        ],
+        "description": "adsfasdfdsadf",
+        "status": 1,
+        "date": "2020-05-27T21:28:11.040098Z"
+    },
+    {
+        "id": "6f2cb64b-d13a-48e4-beaf-79bc4bea296c",
+        "code": "84110243303071231",
+        "format": "EAN_13",
+        "name": "asdffasdfsdfa",
+        "image": "http://192.168.0.31:8000/media/Products/Images/llorando112_3ucflOc.png",
+        "fbuser": "http://192.168.0.31:8000/users/1/",
+        "components": [
+            "http://192.168.0.31:8000/components/5/",
+            "http://192.168.0.31:8000/components/7/"
+        ],
+        "description": "assfdsdfasdfasfd",
+        "status": 1,
+        "date": "2020-05-27T21:30:21.188654Z"
+    },
+    {
+        "id": "3cc9ef57-66ff-4962-8564-3f9896c6e456",
+        "code": "84110243303071231222",
+        "format": "EAN_13",
+        "name": "test2",
+        "image": null,
+        "fbuser": "http://192.168.0.31:8000/users/2/",
+        "components": [
+            "http://192.168.0.31:8000/components/5/",
+            "http://192.168.0.31:8000/components/7/"
+        ],
+        "description": "assfdsdfasdfasfd",
+        "status": 1,
+        "date": "2020-05-27T21:30:21.188654Z"
+    },
+    {
+        "id": "c76201c2-4cc3-4d6c-9228-0aa4acb2895a",
+        "code": "84110243303071231333",
+        "format": "EAN_13",
+        "name": "tests3",
+        "image": null,
+        "fbuser": "http://192.168.0.31:8000/users/1/",
+        "components": [
+            "http://192.168.0.31:8000/components/5/",
+            "http://192.168.0.31:8000/components/7/"
+        ],
+        "description": "assfdsdfasdfasfd",
+        "status": 1,
+        "date": "2020-05-27T21:30:21.188654Z"
+    },
+    {
+        "id": "b726dade-98aa-4735-ba4e-3707458dd2ea",
+        "code": "8411024330307123133333",
+        "format": "EAN_13",
+        "name": "tests4",
+        "image": null,
+        "fbuser": "http://192.168.0.31:8000/users/2/",
+        "components": [
+            "http://192.168.0.31:8000/components/5/",
+            "http://192.168.0.31:8000/components/7/"
+        ],
+        "description": "assfdsdfasdfasfd",
+        "status": 1,
+        "date": "2020-05-27T21:30:21.188654Z"
+    }
+]
+
+}
