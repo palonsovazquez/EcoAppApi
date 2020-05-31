@@ -11,3 +11,4 @@ venv3.80
 /EcoApp/media/
 /EcoApp/ecoapp-secret.json
 /EcoApp/secrets.json
+/EcoApp/EcoApp/cor/migrations/
