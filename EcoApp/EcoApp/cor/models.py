@@ -52,6 +52,7 @@ try:
 
                 componentdb = Component(code=component['code'], name=component['name'],
                                         recycleType=component['recycleType'], image=imagen)
+
                 componentdb.save()
                 print(componentdb)
 except:
