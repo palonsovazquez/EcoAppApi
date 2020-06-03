@@ -1,134 +1,189 @@
 {"components" : [
     {
         "code": 2,
-        "name": "Bolsa de plástico",
+        "name": "Tapa de plástico",
         "recycleType": 1,
-        "image": "http://192.168.0.31:8000/media/Bolsa_de_pl%C3%A1stico.png"
+        "image": "http://192.168.0.31:8000/media/Components/Images/Tapa_de_pl%C3%A1stico.png"
     },
     {
         "code": 3,
-        "name": "Caja de cartón Limpia",
-        "recycleType": 3,
-        "image": "http://192.168.0.31:8000/media/Caja_de_cart%C3%B3n_Limpia.png"
+        "name": "Bolsa de plástico",
+        "recycleType": 1,
+        "image": "http://192.168.0.31:8000/media/Components/Images/Bolsa_de_pl%C3%A1stico.png"
     },
     {
         "code": 4,
-        "name": "Caja de cartón Pizza",
-        "recycleType": 4,
-        "image": "http://192.168.0.31:8000/media/Caja_de_cart%C3%B3n_Pizza.png"
+        "name": "Caja de cartón Limpia",
+        "recycleType": 3,
+        "image": "http://192.168.0.31:8000/media/Components/Images/Caja_de_cart%C3%B3n_Limpia.png"
     },
     {
         "code": 5,
-        "name": "Caja de plástico",
-        "recycleType": 1,
-        "image": "http://192.168.0.31:8000/media/Caja_de_pl%C3%A1stico.png"
+        "name": "Caja de cartón Pizza",
+        "recycleType": 4,
+        "image": "http://192.168.0.31:8000/media/Components/Images/Caja_de_cart%C3%B3n_Pizza.png"
     },
     {
         "code": 6,
-        "name": "Carcasa de plástico",
-        "recycleType": 7,
-        "image": "http://192.168.0.31:8000/media/Carcasa_de_pl%C3%A1stico.png"
+        "name": "Caja de plástico",
+        "recycleType": 1,
+        "image": "http://192.168.0.31:8000/media/Components/Images/Caja_de_pl%C3%A1stico.png"
     },
     {
         "code": 7,
-        "name": "Chapa metalica Botella Vidrio",
-        "recycleType": 1,
-        "image": "http://192.168.0.31:8000/media/Chapa_metalica_Botella_Vidrio.png"
+        "name": "Carcasa de plástico",
+        "recycleType": 7,
+        "image": "http://192.168.0.31:8000/media/Components/Images/Carcasa_de_pl%C3%A1stico.png"
     },
     {
         "code": 8,
-        "name": "Corcho",
-        "recycleType": 4,
-        "image": "http://192.168.0.31:8000/media/Corcho.png"
+        "name": "Chapa metalica",
+        "recycleType": 1,
+        "image": "http://192.168.0.31:8000/media/Components/Images/Chapa_metalica.png"
     },
     {
         "code": 9,
         "name": "Corcho",
-        "recycleType": 6,
-        "image": "http://192.168.0.31:8000/media/Corcho.png"
+        "recycleType": 4,
+        "image": "http://192.168.0.31:8000/media/Components/Images/Corcho.png"
     },
     {
         "code": 10,
-        "name": "Envoltorio de papel Limpio",
-        "recycleType": 3,
-        "image": "http://192.168.0.31:8000/media/Envoltorio_de_papel_Limpio.png"
+        "name": "Corcho",
+        "recycleType": 6,
+        "image": "http://192.168.0.31:8000/media/Components/Images/Corcho.png"
     },
     {
         "code": 11,
-        "name": "Envoltorio de papel Sucio",
-        "recycleType": 4,
-        "image": "http://192.168.0.31:8000/media/Envoltorio_de_papel_Sucio.png"
+        "name": "Envoltorio de papel Limpio",
+        "recycleType": 3,
+        "image": "http://192.168.0.31:8000/media/Components/Images/Envoltorio_de_papel_Limpio.png"
     },
     {
         "code": 12,
-        "name": "Envoltorio de plástico",
-        "recycleType": 1,
-        "image": "http://192.168.0.31:8000/media/Envoltorio_de_pl%C3%A1stico.png"
+        "name": "Envoltorio de papel Sucio",
+        "recycleType": 4,
+        "image": "http://192.168.0.31:8000/media/Components/Images/Envoltorio_de_papel_Sucio.png"
     },
     {
         "code": 13,
-        "name": "Lata de aluminio",
+        "name": "Envoltorio de plástico",
         "recycleType": 1,
-        "image": "http://192.168.0.31:8000/media/Lata_de_aluminio.png"
+        "image": "http://192.168.0.31:8000/media/Components/Images/Envoltorio_de_pl%C3%A1stico.png"
     },
     {
         "code": 14,
-        "name": "Madera de obra",
-        "recycleType": 7,
-        "image": "http://192.168.0.31:8000/media/Madera_de_obra.png"
+        "name": "Lata de aluminio",
+        "recycleType": 1,
+        "image": "http://192.168.0.31:8000/media/Components/Images/Lata_de_aluminio.png"
     },
     {
         "code": 15,
-        "name": "Papel",
-        "recycleType": 3,
-        "image": "http://192.168.0.31:8000/media/Papel.png"
+        "name": "Madera de obra",
+        "recycleType": 7,
+        "image": "http://192.168.0.31:8000/media/Components/Images/Madera_de_obra.png"
     },
     {
         "code": 16,
         "name": "Papel",
         "recycleType": 3,
-        "image": "http://192.168.0.31:8000/media/Papel.png"
+        "image": "http://192.168.0.31:8000/media/Components/Images/Papel.png"
     },
     {
         "code": 17,
-        "name": "Pilas",
-        "recycleType": 8,
-        "image": "http://192.168.0.31:8000/media/Pilas.png"
+        "name": "Periódico",
+        "recycleType": 3,
+        "image": "http://192.168.0.31:8000/media/Components/Images/Peri%C3%B3dico.png"
     },
     {
         "code": 18,
-        "name": "Restos de poda",
-        "recycleType": 4,
-        "image": "http://192.168.0.31:8000/media/Restos_de_poda.png"
+        "name": "Pilas",
+        "recycleType": 8,
+        "image": "http://192.168.0.31:8000/media/Components/Images/Pilas.png"
     },
     {
         "code": 19,
-        "name": "Revista",
-        "recycleType": 3,
-        "image": "http://192.168.0.31:8000/media/Revista.png"
+        "name": "Restos de poda",
+        "recycleType": 4,
+        "image": "http://192.168.0.31:8000/media/Components/Images/Restos_de_poda.png"
     },
     {
         "code": 20,
-        "name": "Tapa de metal",
-        "recycleType": 1,
-        "image": "http://192.168.0.31:8000/media/Tapa_de_metal.png"
+        "name": "Revista",
+        "recycleType": 3,
+        "image": "http://192.168.0.31:8000/media/Components/Images/Revista.png"
     },
     {
         "code": 21,
-        "name": "Tapa de plástico",
+        "name": "Tapa de metal",
         "recycleType": 1,
-        "image": "http://192.168.0.31:8000/media/Tapa_de_pl%C3%A1stico.png"
+        "image": "http://192.168.0.31:8000/media/Components/Images/Tapa_de_metal.png"
     },
     {
         "code": 22,
-        "name": "Tapa plastica Botella Vidrio",
+        "name": "Tapa de plástico",
         "recycleType": 1,
-        "image": "http://192.168.0.31:8000/media/Tapa_plastica_Botella_Vidrio.png"
+        "image": "http://192.168.0.31:8000/media/Components/Images/Tapa_de_pl%C3%A1stico.png"
     },
     {
         "code": 23,
+        "name": "Tapa plastica Botella Vidrio",
+        "recycleType": 1,
+        "image": "http://192.168.0.31:8000/media/Components/Images/Tapa_plastica_Botella_Vidrio.png"
+    },
+    {
+        "code": 24,
         "name": "Toalla Papel",
         "recycleType": 6,
-        "image": "http://192.168.0.31:8000/media/Toalla_Papel.png"
+        "image": "http://192.168.0.31:8000/media/Components/Images/Toalla_Papel.png"
+    },
+    {
+        "code": 25,
+        "name": "Botella Vidrio",
+        "recycleType": 2,
+        "image": "http://192.168.0.31:8000/media/Components/Images/Botella_Vidrio.png"
+    },
+    {
+        "code": 26,
+        "name": "Baterías",
+        "recycleType": 8,
+        "image": "http://192.168.0.31:8000/media/Components/Images/Bater%C3%ADas.png"
+    },
+    {
+        "code": 27,
+        "name": "Tetrabrick",
+        "recycleType": 1,
+        "image": "http://192.168.0.31:8000/media/Components/Images/Tetrabrick.png"
+    },
+    {
+        "code": 28,
+        "name": "Caja de cartón Limpia",
+        "recycleType": 3,
+        "image": "http://192.168.0.31:8000/media/Components/Images/Caja_de_cart%C3%B3n_Limpia.png"
+    },
+    {
+        "code": 29,
+        "name": "Caja de cartón Sucia",
+        "recycleType": 4,
+        "image": "http://192.168.0.31:8000/media/Components/Images/Caja_de_cart%C3%B3n_Sucia.png"
+    },
+    {
+        "code": 30,
+        "name": "Caja de cigarrillos (interior)",
+        "recycleType": 1,
+        "image": "http://192.168.0.31:8000/media/Components/Images/Caja_de_cigarrillos_(carton).png"
+    },
+    {
+        "code": 31,
+        "name": "Caja de cigarrillos (carton)",
+        "recycleType": 3,
+        "image": "http://192.168.0.31:8000/media/Components/Images/Caja_de_cigarrillos_(envoltorio).png"
+    },
+    {
+        "code": 32,
+        "name": "Caja de cigarrillos (envoltorio)",
+        "recycleType": 1,
+        "image": "http://192.168.0.31:8000/media/Components/Images/.png"
     }
-]}
+]
+  }

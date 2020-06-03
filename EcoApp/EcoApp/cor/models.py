@@ -1,3 +1,4 @@
+#coding: utf-8 -*-
 import uuid
 import json
 
@@ -7,7 +8,7 @@ from django.utils import timezone
 
 # model of Component
 # Class to store prototype of a component common to some of the products.
-
+from django.utils.encoding import smart_str
 
 
 class Component(models.Model):
@@ -35,20 +36,26 @@ class Component(models.Model):
 
 # script to load components from json
 
-try:
-    with open("components.json", "r") as read_file:
 
-        data = json.load(read_file)
+
+try:
+    with open("components.json", "r",encoding='utf-8') as read_file:
+
+        data = json .load(read_file )
         if 'components' in data:
             print('test1')
             for component in data['components']:
-                print('test2')
+                print(component['name'])
+
+                imagen = smart_str(component['image'])
+                imagen = "/Components/Images/" + imagen.split("/media/Components/Images/")[1]
+
                 componentdb = Component(code=component['code'], name=component['name'],
-                                        recycleType=component['recycleType'], image=component['image'])
+                                        recycleType=component['recycleType'], image=imagen)
                 componentdb.save()
                 print(componentdb)
 except:
-    print("components.json not present in path")
+    print("error")
 
 
 
