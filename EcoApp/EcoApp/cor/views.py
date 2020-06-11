@@ -51,7 +51,7 @@ class ProductViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows Product to be viewed or edited.
     """
-    queryset = Productos.objects.all().order_by('date')
+    queryset = Productos.objects.all().order_by('date').desc()  ## cambiar por asc() si no funciona bien
     serializer_class = ProductSerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
     filter_backends = [DjangoFilterBackend]
