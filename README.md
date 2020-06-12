@@ -51,7 +51,7 @@
 ## About the project
 Seen general situation of the society around the 3Rs practice through the time, we have realised that most people don't know how to recycle properly. This app was born in order to solve most of the doubts that even we have had when recycling, reusing o repairing products.
 
-This is the Api seccion of the proyect of EcoApp
+This is the Api seccion of the project of EcoApp
 
 ### Built with
 * [Django](https://www.django-rest-framework.org/) - Django is a Web Framework.
