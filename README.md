@@ -17,7 +17,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/palonsovazquez/EcoAppApi">
-    <img src="images/logo/logo.png" alt="Logo" width="425" height="125">
+    <img src="logo.png" alt="Logo" width="425" height="125">
   </a>
   <br />
   <p align="center">
