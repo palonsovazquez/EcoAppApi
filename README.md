@@ -51,7 +51,7 @@
 ## About the project
 Seen general situation of the society around the 3Rs practice through the time, we have realised that most people don't know how to recycle properly. This app was born in order to solve most of the doubts that even we have had when recycling, reusing o repairing products.
 
-This is the API seccion of the project of EcoApp.
+This is the API section of the project of EcoApp.
 
 ### Built with
 * [Django](https://www.django-rest-framework.org/) - Django is a Web Framework.
@@ -63,16 +63,15 @@ This is the API seccion of the project of EcoApp.
 <!-- GETTING STARTED -->
 ## Getting Started
 ### Requirements
-Python 3.8.
+Python 3.8
 
 ### Installation
-* Clone this repository and launch the script start_para_tontos.bat.
+* Clone this repository and launch the script "start_para_tontos.bat".
 * Wait for the connection of a client.
 
 <!-- USAGE EXAMPLES -->
 ## Usage
-* Logging into the application
-
+* Logging into the application.
 
 <!-- ROADMAP -->
 ## Roadmap
