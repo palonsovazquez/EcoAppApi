@@ -51,11 +51,11 @@
 ## About the project
 Seen general situation of the society around the 3Rs practice through the time, we have realised that most people don't know how to recycle properly. This app was born in order to solve most of the doubts that even we have had when recycling, reusing o repairing products.
 
-This is the Api seccion of the project of EcoApp
+This is the API seccion of the project of EcoApp.
 
 ### Built with
 * [Django](https://www.django-rest-framework.org/) - Django is a Web Framework.
-* [Django Rest Framework](https://www.djangoproject.com/) - Rest Api Framework based in Django.
+* [Django Rest Framework](https://www.djangoproject.com/) - Rest API Framework based in Django.
 * [Django Filter](https://github.com/carltongibson/django-filter) - Filters for Django.
 * [Drf_firebase_auth](https://github.com/garyburgmann/drf-firebase-auth) -  Addon for Firebase Auth.
 * [Firebase](https://firebase.google.com/1) - OAuth 2.0 Authentication API.
@@ -92,7 +92,6 @@ Contributions are what make the open source community such an amazing place to b
 ## Acknowledgements
 * [CPR Daniel Castelao](https://www.danielcastelao.org)
 * [OpenFoodFacts](https://es.openfoodfacts.org)
-* [Codescanner](https://github.com/yuriy-budiyev/code-scanner)
 * [Best README Template](https://github.com/othneildrew/Best-README-Template)
 
 ## Authors
