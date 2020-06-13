@@ -67,7 +67,7 @@ Python 3.8.
 
 ### Installation
 * Clone this repository and launch the script start_para_tontos.bat.
-* Whait for the connection of a client.
+* Wait for the connection of a client.
 
 <!-- USAGE EXAMPLES -->
 ## Usage
